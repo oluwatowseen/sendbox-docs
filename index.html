@@ -12,8 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css" >
 </head>
 <body>
-    <div class="sidenav"> <!-- fixed navigation bar -->
-        <div class="sendbox_logo"><a href="sendbox-docs.html">
+    <div class="sidenav" id="mySideNav"> <!-- fixed navigation bar -->
+        <a href="javascript:void(0)" class="closebtn" id="closeNav">&times; </a>
+        <div class="sendbox_logo"><a href="../index.html">
             <img src="images/sendbox_white_logo.svg" alt="sendbox logo"></a>
         </div>
         <div class="docs_search">
@@ -43,9 +44,12 @@
     <div class="main-content"> <!-- Content layout -->
         <div class="topnav"> <!-- top bar navigation -->
             <div class="topnav_links">
-                <a href="sendbox-docs.html" class="active">DOCS</a>
+                <span id="openNav" class="menu_button">
+                    &#9776;
+                </span>
+                <a href="index.html" class="active">DOCS</a>
             </div>
-                <a href="sendbox.ng" class="topnav_button"> SENDBOX.NG</a>
+                <!-- <a href="sendbox.ng" class="topnav_button"> SENDBOX.NG</a> -->
         </div>
         <div class="link_content"> <!-- main content -->
             <h1 class="header_bg">Sendbox documentation</h1>
@@ -114,8 +118,5 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/myjs.js"></script>
-    <script>
-      
-    </script>
 </body>
 </html>

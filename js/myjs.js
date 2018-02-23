@@ -86,4 +86,12 @@ $(document).ready(function(){
                 scrollTop: $(".next_step").offset().top
             }, 800);
         });
+    
+    $("#openNav").click(function() {
+        $("#mySideNav").css("width", "250px");
+    });
+    $("#closeNav").click(function() {
+        $("#mySideNav").css("width", "0px");
+    });
+      
 });
