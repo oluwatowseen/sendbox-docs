@@ -1,16 +1,28 @@
 html {
-    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: 'Karla', sans-serif;
+  /*font-family: 'Karla', sans-serif;*/
+  font-family: 'Hind', sans-serif;
   font-size: 15px;
   color: #000;
 }
-h1 {
+h1,h2, {
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    font-weight: bold;
 }
-
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'poppins', sans-serif !important;
+    /*font-family: 'Hind', sans-serif;*/
+    color: #000;
+}
+p,a,li,button {
+    /*font-family: 'Karla', sans-serif;*/
+    font-family: 'Hind', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.59;
+}
 /*documentaion side navigation*/
 .sidenav {
     height: 100%;
@@ -78,7 +90,6 @@ h1 {
     display: block;
     line-height: 1.5em;
     letter-spacing: 0.04em;
-    font-family: 'poppins', sans-serif;
 }
 .sidenav .sidenav_links a:hover {
     color: white;
@@ -89,7 +100,6 @@ h1 {
     font-size: 13px;
     line-height: 1.5em;
     padding: 0px 8px 8px 35px;
-    font-family: 'poppins', sans-serif;
 }
 .sidenav .line {
     border-color: rgba(225,225,225,0.55);
@@ -182,13 +192,11 @@ h1 {
 }
 .main-content .topnav .topnav_links a {
     color: #000;
-    font-family: 'poppins', sans-serif;
     opacity: .7;
     text-decoration: none;
 }
 .main-content .topnav .topnav_links .active {
     color: #000;
-    font-family: 'poppins', sans-serif;
     text-decoration: none;
     opacity: 1;
 }
@@ -235,7 +243,6 @@ h1 {
 
 }
 .header_bg {
-    font-family: 'poppins', sans-serif;
     font-weight: 700;
 }
 @media (min-width: 992px) { 
@@ -272,7 +279,6 @@ h1 {
 .link_content .column_links a .columnlink_header {
     font-size: 15px;
     padding-top: 8px;
-    font-family: 'poppins', sans-serif;
     font-weight: bold;
 }
 .link_content .column_links a {
@@ -291,6 +297,11 @@ h1 {
     width: 66%;
     margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+    .link_content .extended_support {
+        width: 100%;
+    }
+}
 .link_content .extended_support .columnlink_header {
     font-size: 18px;
 }
@@ -306,7 +317,6 @@ h1 {
 /*platform guide*/
 .platformguides_header {
     font-size: 18px;
-    font-family: 'poppins', sans-serif;
     font-weight: bold;
 }
 .platform_guides .header_note {
@@ -367,7 +377,6 @@ h1 {
 /*android-sdk*/
 
 .android_guide .language_switch {
-    font-family: 'poppins', sans-serif;
     font-size: 10px;
 }
 .android_guide .language_switch .languageswitch_left {
@@ -378,6 +387,8 @@ h1 {
     background-color: #ed2f59;
     color: #fff;
     padding: 8px 15px;
+    font-family: 'poppins', sans-serif !important;
+    font-size: 10px;
 }
 .android_guide .language_switch .languageswitch_left:hover {
     color: #fff;
@@ -390,8 +401,10 @@ h1 {
     border-bottom-right-radius: 33px;
     color: #ed2f59;
     background-color: #fff;
-    margin-left: -2px;
+    margin-left: -3px;
     padding: 8px 15px;
+    font-family: 'poppins', sans-serif !important;
+    font-size: 10px;
 }
 .android_guide .language_switch .languageswitch_right:hover {
     color: #ed2f59;
@@ -409,7 +422,6 @@ h1 {
 .headerwith_bar {
     position: relative;
     padding: 20px 0px;
-    font-family: 'poppins', sans-serif;
     font-size: 33px;
 }
 .small_header {
@@ -445,7 +457,6 @@ h1 {
 /*android-sdk-kotlin*/
 
 .sdk_kotlin .language_switch {
-    font-family: 'poppins', sans-serif;
     font-size: 10px;
 }
 .sdk_kotlin .language_switch .languageswitch_left {
